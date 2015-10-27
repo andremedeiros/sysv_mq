@@ -12,8 +12,8 @@ package sysv_mq
 #include <sys/msg.h>
 
 typedef struct _sysv_msg {
-  long mtype;
-  char mtext[];
+  long  mtype;
+  char *mtext;
 } sysv_msg;
 */
 import "C"
